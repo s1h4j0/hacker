@@ -14,4 +14,4 @@ class CategoryDetailAdmin(admin.ModelAdmin):
 
 @admin.register(Subject)
 class SubjectAdmin(admin.ModelAdmin):
-    list_display = ['title', 'need', 'category_detail']
+    list_display = ['title', 'credit', 'category_detail']

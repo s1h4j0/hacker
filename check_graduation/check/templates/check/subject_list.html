@@ -1,9 +1,14 @@
-{% for catede in categoryDetail %}
-    {{catede.title}}
-    {% for sub in categoryDetail. %}
-        {{sub.title}}
+{% if categoryDetail%}
+    {% for i in categoryDetail %}
+    <li>
+        {{ i.title }}
+        {% if i.subject_set.all %}
+            {% for j in i.subject_set.all %}
+                {{ j.title }}
+            {% endfor %}
+        {% endif %}
+    </li>
     {% endfor %}
-{% endfor %}
-
-
+    {{ count }}
+{% endif%}
 
