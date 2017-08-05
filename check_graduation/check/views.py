@@ -12,3 +12,5 @@ def subject_list(request):
         'subject' : sub,
 })
 
+def post(request):
+    pass
